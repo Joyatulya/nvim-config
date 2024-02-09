@@ -213,6 +213,8 @@ require('lazy').setup({
       require('onedark').load()
     end,
   },
+  'folke/tokyonight.nvim',
+
 
   {
     -- Set lualine as statusline
@@ -298,8 +300,8 @@ vim.wo.relativenumber = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
-vim.o.shiftwidth = 4
-vim.o.tabstop = 4
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
