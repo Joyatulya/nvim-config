@@ -231,9 +231,9 @@ require('lazy').setup({
 
 require('custom.config')
 require('custom.keymaps')
+require('custom.plugins-config.lsp')
 require('custom.plugins-config.telescope')
 require('custom.plugins-config.treesitter')
-require('custom.plugins-config.lsp')
 require('custom.plugins-config.which-key')
 require('custom.plugins-config.nvim-cmp')
 require('custom.plugins-config.mason')
