@@ -45,6 +45,9 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 -- This tells which kind of keybindings to use. Set 'MACHINE' as as os variable and set it to laptop or desktop
 IS_QWERTY = os.getenv("KEYBOARD") == 'QWERTY'
+if not IS_QWERTY then
+  require('colemak-bindings')
+end
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
