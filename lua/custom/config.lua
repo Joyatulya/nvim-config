@@ -4,7 +4,7 @@
 -- NOTE: You can change these options as you wish!
 
 -- Default color scheme
-vim.cmd.colorscheme('tokyonight_night')
+vim.cmd.colorscheme('tokyonight-night')
 
 -- Set highlight on search
 vim.o.hlsearch = false
