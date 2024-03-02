@@ -20,9 +20,9 @@ return {
 		-- Toggle previous & next buffers stored within Harpoon list
 		vim.keymap.set("n", "<leader>hn", function() harpoon:list():prev() end)
 		vim.keymap.set("n", "<leader>hm", function() harpoon:list():next() end)
-		local harpoon = require('harpoon')
-		harpoon:setup({})
-
+if IS_COLEMAK then
+	
+end
 		-- basic telescope configuration
 		local conf = require("telescope.config").values
 		local function toggle_telescope(harpoon_files)
