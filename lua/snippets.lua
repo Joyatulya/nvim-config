@@ -24,17 +24,13 @@ ls.add_snippets("all", {
 	s("supeform_c", fmta([[
 		
 <<script lang="ts">>
-	import * as Form from "@/registry/new-york/ui/form";
-	import * as Select from "@/registry/new-york/ui/select";
-	import { Input } from "@/registry/new-york/ui/input";
-	import { Button } from "@/registry/new-york/ui/button";
-	import { Textarea } from "@/registry/new-york/ui/textarea";
+	import * as Form from "@shad_comp/ui/form";
+	import * as Select from "@shad_comp/ui/select";
+	import { Input } from "@shad_comp/ui/input";
+	import { Button } from "@shad_comp/ui/button";
+	import { Textarea } from "@shad_comp/ui/textarea";
 	import { type SuperValidated, type Infer, superForm } from "sveltekit-superforms";
-	import SuperDebug from "sveltekit-superforms";
 	import { zodClient } from "sveltekit-superforms/adapters";
-	import { cn } from "$lib/utils";
-	import { browser } from "$app/environment";
-	import { tick } from "svelte";
 
 	export let data: SuperValidated<<Infer<<ProfileFormSchema>>>>;
 
