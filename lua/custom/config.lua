@@ -48,3 +48,6 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Set conceallevel to 2 so that `*` is shown as `•` for obisidian
+vim.o.conceallevel = 2
