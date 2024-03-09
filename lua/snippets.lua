@@ -61,4 +61,10 @@ ls.add_snippets("all", {
 
 	]],
 		{}
-	)), })
+	)),
+	s('scts', fmta([[
+	<<script lang="ts">>
+	<code>
+	<</script>>
+	]]), {})
+})
