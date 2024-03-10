@@ -37,3 +37,7 @@ vim.keymap.set('n', '<leader><tab>', '<C-W>w', { desc = 'Jump Alternate files' }
 vim.keymap.set('n', '<leader>b', ':e#<CR>', { desc = 'Jump Alternate files' })
 vim.api.nvim_create_user_command('Reload', 'so ' .. vim.fn.expand('$HOME/.config/nvim/init.lua'), {})
 vim.api.nvim_create_user_command('OpenSettings', 'e ' .. vim.fn.expand('$HOME/.config/nvim/init.lua'), {})
+
+
+vim.keymap.set('n', '<leader>ww', '<C-w>s<C-w>w', { desc = 'Open spilt window horizontally' })
+vim.keymap.set('n', '<leader>wf', ':vs<CR><C-w>w', { desc = 'Open split window to the [S]ide' })
