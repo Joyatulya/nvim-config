@@ -41,3 +41,15 @@ vim.api.nvim_create_user_command('OpenSettings', 'e ' .. vim.fn.expand('$HOME/.c
 
 vim.keymap.set('n', '<leader>ww', '<C-w>s<C-w>w', { desc = 'Open spilt window horizontally' })
 vim.keymap.set('n', '<leader>wf', ':vs<CR><C-w>w', { desc = 'Open split window to the [S]ide' })
+
+-- Keymaps for better obsidian
+
+
+vim.keymap.set('n', '<leader>o', '', { desc = 'Obsidian Settings' })
+vim.keymap.set('n', '<leader>oo', ':ObsidianOpen ', { desc = 'Open Obsidian File' })
+vim.keymap.set('n', '<leader>on', ':ObsidianNew ', { desc = 'New Obsidian File' })
+vim.keymap.set('n', '<leader>os', ':ObsidianQuickSwitch<CR> ', { desc = 'Search Files Obsidian' })
+vim.keymap.set('n', '<leader>og', ':ObsidianFollowLink<CR> ', { desc = 'Go to the link under the cursor' })
+vim.keymap.set('n', '<leader>ol', ':ObsidianBacklinks<CR> ', { desc = 'Open list of backlinks' })
+vim.keymap.set('n', '<leader>ot', ':ObsidianTemplate ', { desc = 'Open list of templates' })
+
