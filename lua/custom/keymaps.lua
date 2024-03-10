@@ -30,7 +30,7 @@ end, {})
 vim.keymap.set('n', '<A-S-d>', ":g/console.log(.*)/d<CR>", { desc = 'Delete all console logs in the file' })
 vim.keymap.set('n', '<A-S-f>', ":Format<CR>", { desc = 'Format the whole file' })
 vim.keymap.set({ 'n', 'v', 'i' }, '<C-m>', "gcc", { desc = "Comment the line or selection" }) -- dont know why not worki
-vim.keymap.set('n', '<C-b>', ":Ex<CR>", { desc = "Toggle NvimTree" })
+vim.keymap.set('n', '<C-b>', ":NvimTreeToggle<CR>", { desc = "Toggle NvimTree" })
 vim.keymap.set('n', '<C-S-b>', ":Vex<CR>", { desc = "Toggle NvimTree" })
 vim.keymap.set('n', '<C-S-o>', '<C-S-i>', { desc = "Jump forward in the list" })
 vim.keymap.set('n', '<leader><tab>', '<C-W>w', { desc = 'Jump Alternate files' })

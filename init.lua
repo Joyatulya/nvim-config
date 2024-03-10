@@ -235,6 +235,9 @@ require('lazy').setup({
     },
     opts = require("custom.plugins-config.obsidian"),
   },
+
+  'nvim-tree/nvim-tree.lua',
+  'nvim-tree/nvim-web-devicons',
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
@@ -259,6 +262,7 @@ require('custom.plugins-config.treesitter')
 require('custom.plugins-config.which-key')
 require('custom.plugins-config.nvim-cmp')
 require('custom.plugins-config.mason')
+require('custom.plugins-config.nvim-tree')
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
